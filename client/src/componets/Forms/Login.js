@@ -83,9 +83,10 @@ export default function Login() {
   return( <>
             <section className='container Login-hero-container'>
             <div className='display-9'>
-                <h1>Login Page</h1>
+             
             </div>
             <div className='form1'>
+            <h1>Login Page</h1>
             <div className="form-group">
              <label for="cars">Role</label>
              <select id="name" name="role" value={user.role} onChange={handlechange}>

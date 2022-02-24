@@ -16,10 +16,10 @@ export default function Admin  () {
                 </div>
                 <div className='btn3'>
                 <form className="a-flex">
-                <Link className="btn btn-style1" to='/AddCrop'>Add Crops</Link>
-                <button className="btn btn-style1" to='/FarmerInfo'>Farmer Details</button>
-                <button className="btn btn-style1" to='/BuyerInfo'>Buyer Details</button>
-                <button className="btn btn-style1" to='/DisplayUplodedCrops'>Display Crop Details</button>
+                {/* <Link className="btn btn-style1" to='/AddCrop'>Add Crops</Link> */}
+                <Link className="btn btn-style1" to='/FarmerInfo'>Farmer Details</Link>
+                <Link className="btn btn-style1" to='/BuyerInfo'>Buyer Details</Link>
+                <Link className="btn btn-style1" to='/Transaction'>Transaction Details</Link>
                 <Link className="btn btn-style1" to='/TransportationCompany'>Transportation</Link>
                 <button className="btn  btn-style1" type="submit">Log Out</button>
                 </form>

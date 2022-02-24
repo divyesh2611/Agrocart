@@ -14,8 +14,8 @@ export default function Farmer  ()  {
                 <form className='f-flex'>
                 <Link className="btn btn-style5" to='/UpdateProfile'>Update Profile</Link>
                 <Link className="btn btn-style6" to='/UploadProducts'>Upload Products</Link>
-                <button className="btn btn-style6" to='/DisplayProducts'>Display Upload Products</button>
-                <button className="btn btn-style6" to='/BuyerDetails'>Buyer Details</button>
+                <Link className="btn btn-style6" to='/DisplayProducts'>Display Upload Products</Link>
+                <Link className="btn btn-style6" to='/BuyerDetails'>Buyer Details</Link>
                 </form>
                 <div className='main-herosection-images'>
                 <img src='./Images/farmer1.jpg' alt='photosimg1' className='img1'/>

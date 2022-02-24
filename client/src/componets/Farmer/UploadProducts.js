@@ -5,10 +5,11 @@ export default function UploadProducts  ()  {
       <>
           <section className='container upload-container'>
               <div className='display-1'>
-                  <h1>Upload Product</h1>
+                 
               </div>
               <div className='form4'>
                    <div className='form-group4'>
+                   <h1>Upload Product</h1>
                 <label for="cars">Crop Name : </label>
              <select id="name" name="name">
              <option value="name"> </option>
@@ -21,8 +22,16 @@ export default function UploadProducts  ()  {
              <option value="name">Sorghum(જુવાર)</option>
              </select>
             </div>
+            <div className="form-group9">
+              <label htmlFor="username">Farmer Name: </label>
+              <input type="text" name="username" placeholder="" />
+            </div>
+            <div className="form-group10">
+              <label htmlFor="City">City: </label>
+              <input type="text" name="username" placeholder="" />
+            </div>
             <div className="form-group5">
-              <label htmlFor="username">Crop Quantity(Quintal) :</label>
+              <label htmlFor="username">Crop Quantity(Kg) :</label>
               <input type="text" name="username" placeholder="" />
             </div>
             <div className="form-group6">
@@ -34,8 +43,8 @@ export default function UploadProducts  ()  {
               
               </div>     
             <div className='form-group8'>
-                <label htmlfor="name">Crop Price (Rs/Quintal) : </label>
-           
+                <label htmlfor="name">Crop Price (Rs/Kg) : </label>
+                <input type="text" name="email" placeholder="" />
             </div>  
             <button className="btn  btn-style8" type="submit">Submit</button>
               </div>

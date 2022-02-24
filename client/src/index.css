@@ -299,14 +299,29 @@ code {
 
 /*-----------------FORM--------------------*/
 /*-------------Registration Form--------------------*/
+
+
+.registration-hero-container{
+    background-image:url(../public/Images/BG1.jpg);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-top: -50px;
+    /* background-position: center; */
+    background-size: cover;
+    margin-left: 19px;
+}
+
+
+
 .registration-hero-container h1{
-    background-color: rgb(235, 238, 192);
+    /* background-color: rgb(235, 238, 192); */
     text-transform: capitalize;
     font-weight: bold;
     margin-top: 3rem;
     /* margin-left: 39rem; */
     font-style: initial;
-    color: rgb(98, 151, 201);
+    /* color: rgb(98, 151, 201); */
     text-align: center;
     padding: 15px; 
     border-radius: 5px;
@@ -320,11 +335,12 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(103, 236, 154);
+    /* background-color: rgb(103, 236, 154); */
     font-style:italic;
     font-family:bold;
     height: 140vh;
     border-radius: 5px;
+    color: white;
 }
 
 .form-group{
@@ -377,19 +393,33 @@ input {
 
 /*--------------------Login page---------------*/
 
+.Login-hero-container {
+    background-image:url(../public/Images/BG2.jpg);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-top: -14px;
+    /* background-position: center; */
+    background-size: cover;
+    margin-left: 19px;
+}
+
+
+
 .Login-hero-container h1{
-    background-color: rgb(235, 238, 192);
+    /* background-color: rgb(235, 238, 192); */
     text-transform: capitalize;
     font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2.5rem;
     /* margin-left: 8rem; */
     /* margin-left: 39rem; */
     font-style: initial;
-    color: rgb(98, 151, 201);
+    color: black;
     text-align: center;
-    padding: 15px; 
-    border-radius: 5px;
+    /* padding: 15px;  */
+    /* border-radius: 5px; */
 
 }
 
@@ -399,12 +429,13 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(152, 220, 236);
+    /* background-color: rgb(152, 220, 236); */
     font-style:italic;
     font-family:bold;
     height: 100vh;
     border-radius: 5px;
     padding: 30vh 0 30vh 0;
+    color: white;
    
 }
 
@@ -450,9 +481,23 @@ input {
                    --------------------------*/
 
 
+.admin-container{
+    background-image:url(../public/Images/BG3.jpg);
+    /* margin-left: 10px; */
+    padding: 0;
+    max-width: 100%;
+    margin-top: -30px;
+    /* background-position: center; */
+    background-size: cover;
+    margin-left: 19px;
+    border-radius: 5px;
+}
+
+
+
 .display9{
-    background-color:rgb(207, 230, 240);
-    height: 70vh;
+    /* background-color:rgb(207, 230, 240); */
+    height: 80vh;
     border-radius: 10px;
 }                   
 
@@ -473,7 +518,7 @@ input {
     text-transform: capitalize;
     margin-top: -1.8rem;
     font-style: initial;
-    color:black;
+    color:red;
     text-align: center;
     margin-bottom:2rem;
    
@@ -484,7 +529,7 @@ input {
     /* margin-right: 1.5%; */
     margin-left: 3rem;
     border-radius: 2;
-    box-shadow: 0 0.8rem 0.8rem rgb(73, 59, 59);
+    /* box-shadow: 0 0.8rem 0.8rem rgb(73, 59, 59); */
     /* margin-bottom: 2rem; */
     margin-top: 2rem;
 }
@@ -510,7 +555,7 @@ input {
 }
 
 .btn3{
-    background-color: rgb(250, 236, 216);
+    /* background-color: rgb(250, 236, 216); */
     margin-top: 3rem;
     margin-left: .1rem;
     margin-right: .1rem;
@@ -521,18 +566,32 @@ input {
 
 /*-------------Add-crop page-------------------*/
 
+/* .Addcrop-hero-container{
+    background-image:url(../public/Images/photo4.jpg);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-top: -10px;
+ 
+    background-size: cover;
+    margin-left: 19px;
+    border-radius: 10px;
+}
+
 .Addcrop-hero-container h1{
-    background-color: rgb(245, 205, 173);
+ 
     text-transform: capitalize;
     font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 0;
-    /* margin-left: -rem; */
+    margin-top: -1rem;
+    margin-bottom: rem;
+  
     font-style: initial;
-    color: rgb(82, 65, 57);
+    color: red;
     text-align: center;
     padding: 15px; 
     border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 
 }
             
@@ -543,13 +602,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(121, 137, 141);
+  
     font-style:italic;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
     border-radius: 5px;
     padding: 30vh 0 30vh 0;
+    color: black;
    
 }
 
@@ -571,19 +631,80 @@ input {
 .btn4:hover{
     border: .1rem solid var(--primary-color);
     background-color:rgb(117, 171, 236);
-    /* color:var(--primary-color); */
+  
     box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+} */
+
+
+/*-----------------------Buyer-Informations
+                  - ----------------------------------*/
+
+.Buyerdetail-container{
+    background-color:whitesmoke;
+    margin-left: 24px;
+    height: 150vh;
+    /* background-size: cover; */
+    max-width: 100%;
+    border-radius: 2px solid black;
 }
+
+.Buyerdetail-container h1{
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .8cm;
+    
+}
+
+
+.buy{
+    height: 10vh;
+    background-color: rgb(52, 53, 49);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: -.5rem;
+    
+}
+
+
+.buy1 h2{
+    font-size: .5cm;
+    max-width: 12.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: inline;
+    padding: 0 48px;
+    color: white;
+    
+    
+}
+
+
+
+
+
+
 
 
 
 /*--------------TRANSPORT PAGE-----------------*/
 
-.display7{
-    background-color:rgb(186, 224, 240);
-    height: 70vh;
-    border-radius: 10px;
-}                   
+.trans-container{
+    background-image:url(../public/Images/BG4.jpg);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-top: px;
+    /* background-position: center; */
+    background-size: cover;
+    margin-left: 19px;
+}
+
+
+          
 
 .display7 h1{
     text-transform: capitalize;
@@ -591,11 +712,13 @@ input {
     /* margin-top: 3rem; */
     /* margin-left: 39rem; */
     font-style: initial;
-    color: red;
+    color:white;
     text-align: center;
     padding: 15px; 
     border-radius: 5px;
     margin-top: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 
@@ -604,13 +727,14 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(114, 147, 167);
+    /* background-color: rgb(114, 147, 167); */
     font-style:italic;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100vh;
+    height: 130vh;
     border-radius: 5px;
     padding: 30vh 0 30vh 0;
+    color: white;
    
 }
 
@@ -848,31 +972,51 @@ input {
 
 /*--------------Upload Product---------------------*/
 
-
 .upload-container{
+    /* background-color: rgb(190, 201, 212); */
+    border-radius: 10px;
+    margin-top: rem;
+    /* height: 10vh; */
+    background-image:url(../public/Images/BG2.jpg);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    /* margin-top: -30px; */
+    /* background-position: center; */
+    background-size: cover;
+    margin-left: 19px;
+}
+
+
+/* .upload-container{
     background-color: rgb(158, 168, 179);
     border-radius: 10px;
     margin-top: 3rem;
     height: 10vh;
    
-}
+} */
 
 .upload-container h1{
-    color: rgb(182, 57, 57);
+    color: white;
     font-weight: bold;
     font-variant: small-caps;
     font-size: 8vh;
     text-align: center;
 }
 
+.form-group4 h1{
+    margin-top:-9rem;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+}
 
 .form4{
-    background-color: rgb(207, 237, 238);
+    /* background-color: rgb(207, 237, 238); */
     border-radius: 10px;
     margin-top: -.3rem;
     margin-left: -.8rem;
     margin-right: -.8rem;
-    height: 100vh;
+    height: 130vh;
 }
 
 .form-group4{
@@ -881,16 +1025,16 @@ input {
     padding: 30vh;
     margin-left: .4rem;
     font-weight: bold;
-    color: rgb(22, 23, 26);
+    color: white;
 }
 
 
 .form-group5{
     text-align: center;
-    margin-top: -15rem;
-    margin-left: 4rem;
+    margin-top: -17rem;
+    margin-left: 6rem;
     font-weight: bold;
-    color: rgb(22, 23, 26);
+    color: white;
 }
 
 .form-group6{
@@ -899,7 +1043,7 @@ input {
     margin-left: 7rem;
     padding: 15.5rem;
     font-weight: bold;
-    color: rgb(22, 23, 26);
+    color: white;
 }
 
 .form-group7{
@@ -908,16 +1052,35 @@ input {
     margin-left: -11rem;
     /* padding: 15.5rem; */
     font-weight: bold;
-    color: rgb(22, 23, 26);
+    color: white;
 }
 
 .form-group8{
     text-align: center;
     margin-top: -15rem;
-    margin-left: -16.4rem;
+    margin-left: 6.4rem;
     padding: 18rem;
     font-weight: bold;
-    color: rgb(22, 23, 26);
+    color: white;
+}
+
+
+.form-group9{
+    text-align: center;
+    margin-top: -33rem;
+    margin-left: 8.7rem;
+    padding: 18rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group10{
+    text-align: center;
+    margin-top: -35rem;
+    margin-left: 13.7rem;
+    padding: 18rem;
+    font-weight: bold;
+    color: white;
 }
 
 
@@ -930,7 +1093,7 @@ input {
     text-transform: capitalize;
     font-size: .9rem;
     margin-top: -29rem;
-    margin-left: 48rem;
+    margin-left: 59rem;
     text-align: center;
 }
 
@@ -939,4 +1102,51 @@ input {
     background-color:rgb(212, 218, 172);
     color:var(--primary-color);
     box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+/*------------------------product details--------------------*/
+
+.productdetail-container{
+    background-color:whitesmoke;
+    margin-left: 24px;
+    height: 150vh;
+    /* background-size: cover; */
+    max-width: 100%;
+    border-radius: 2px solid black;
+}
+
+.productdetail-container h1{
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: .8cm;
+    
+}
+
+
+.far-product{
+    height: 10vh;
+    background-color: rgb(52, 53, 49);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: -.5rem;
+    
+    
+}
+
+
+.far h2{
+    font-size: .5cm;
+    /* max-width: 12.5%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: inline;
+    padding: 0 30px;
+    color: white; 
+    /* text-align: center; */
+    
+    
 }
