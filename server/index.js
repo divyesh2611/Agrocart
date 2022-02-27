@@ -18,6 +18,7 @@ connectToMongo()
 
 app.use('/login', require('./routes/login'))
 app.use('/register', require('./routes/register'))
+app.use('/uploadcrop', require('./routes/uploadcrop'))
 //app.use('/modifyProfile', require('./routes/modifyProfile'))
 app.listen(9002,()=>{
     console.log("BE started at port 9002")

@@ -139,7 +139,7 @@ export default function Registration() {
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input type="text" name="password" value={user.password} onChange={handlechange} placeholder="password" required/>
+              <input type="password" name="password" value={user.password} onChange={handlechange} placeholder="password" required/>
             </div>
             <div className="btn1">
           <button type="button" className="btn" value='submit detail' onClick={submit} >

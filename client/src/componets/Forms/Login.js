@@ -101,7 +101,7 @@ export default function Login() {
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input type="text" name="password" placeholder="password" value={user.password} onChange={handlechange} />
+              <input type="password" name="password" placeholder="password" value={user.password} onChange={handlechange} />
             </div>
             <div className="btn2">
           <button type="button" className="btn" onClick={login}>

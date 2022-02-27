@@ -1021,7 +1021,8 @@ input {
 
 .form-group4{
     text-align: center;
-    /* margin-top: 5rem; */
+    margin-top: 8rem;
+    margin-bottom: -1rem;
     padding: 30vh;
     margin-left: .4rem;
     font-weight: bold;
@@ -1049,7 +1050,7 @@ input {
 .form-group7{
     text-align: center;
     margin-top: -15rem;
-    margin-left: -11rem;
+    margin-left: 15rem;
     /* padding: 15.5rem; */
     font-weight: bold;
     color: white;
@@ -1093,7 +1094,7 @@ input {
     text-transform: capitalize;
     font-size: .9rem;
     margin-top: -29rem;
-    margin-left: 59rem;
+    margin-left: 73rem;
     text-align: center;
 }
 

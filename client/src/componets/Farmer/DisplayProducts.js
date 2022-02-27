@@ -20,7 +20,10 @@ export default function DisplayProducts  () {
                  <h2>Modify</h2>
                </div>
                </section>
+               
             </section>
+          
+            
 
         </>
   )
