@@ -35,10 +35,13 @@ const submit = () => {
               }
               
           })
-          transportation. companyname=""
-          transportation.address=""
-          transportation.city=""
-          transportation.contactno=""
+          
+          setUser({
+            companyname:"",
+            address:"",
+            city:"",
+            contactno:"" 
+          })
       }else{
           alert("Fill up complete form")
 

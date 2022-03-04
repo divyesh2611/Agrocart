@@ -1,31 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import FileBase from 'react-file-base64' ;
 export default function UploadProducts  ()  {
-  // const[crop,setCrop]=useState("")
-  // const[username,setusername]=useState("")
-  // const[city,setcity]=useState("")
-  // const[cropDescription,setcropDescription]=useState("")
-  // const[cropQuantity,setcropQuantity]=useState("")
-  // const[cropPrice,setcropPrice]=useState("")
-  // function submit(e)
-  // {
-  //     //console.log(crop,username,city,cropDescription,cropQuantity,cropPrice)
-  //     // e.preventDefault()
-  //     let data={crop,username,city,cropDescription,cropQuantity,cropPrice}
-  //     fetch("http://localhost:9002/uploadcrop",{
-  //     method:'post',
-  //     Headers:{
-  //         'Accept':'application/json',
-  //         'Contest/type':'application/json'
-  //     },
-  //     body:JSON.stringify(data)
-      
-  //   }).then((result)=>{
-  //     console.log("result")
-  //   })
-  //     alert("crop is successionfully uploaded")
-  // }
+ 
   const [crop, setUser] = useState({
     username:"",
     city:"",
@@ -37,6 +14,7 @@ export default function UploadProducts  ()  {
     logo:"" 
     
   })
+  
   // const[profile,setProfile]=useState("")
   
   const handleonchange = e => {
