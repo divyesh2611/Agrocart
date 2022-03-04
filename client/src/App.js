@@ -21,6 +21,11 @@ import BuyerInfo from "./componets/Admin/BuyerInfo";
 import BuyerDetails from "./componets/Farmer/BuyerDetails";
 import DisplayProducts from "./componets/Farmer/DisplayProducts";
 import UserState from './context/users/userState';
+import Buyer from "./componets/Buyer/Buyer";
+import Wishlist from "./componets/Buyer/Wishlist";
+import Viewproductdetails from "./componets/Buyer/Viewproductdetails";
+import PlaceOrder from "./componets/Buyer/PlaceOrder";
+import PaymentMode from "./componets/Buyer/PaymentMode";
 
 
 
@@ -50,6 +55,12 @@ function App(){
           <Route exact path="/BuyerDetails" element={<BuyerDetails />}></Route>
           <Route exact path="/DisplayProducts" element={<DisplayProducts />}></Route>
           <Route exact path="/UserState" element={<UserState/>}></Route>
+          <Route exact path="/Buyer" element={<Buyer />}></Route>
+          {/* <Route exact path="/Viewproductdetails" element={<Viewproductsdetails />}></Route> */}
+          <Route exact path="/Wishlist" element={<Wishlist />}></Route>    
+          <Route exact path="/Viewproductdetails" element={<Viewproductdetails />}></Route>          
+          <Route exact path="/PlaceOrder" element={<PlaceOrder />}></Route>  
+          <Route exact path="/PaymentMode" element={<PaymentMode />}></Route>
         </Routes>
       </BrowserRouter>
      

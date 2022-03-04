@@ -109,6 +109,7 @@ export default function Login() {
             Submit
           </button>
         </div>
+        <Link to='/ForgotPassword?' >Forgot Password?</Link>
         </div>
     
             </section>

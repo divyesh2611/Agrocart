@@ -7,6 +7,7 @@ export const Navbar = () => {
 
     return(
     <>
+    
         <section className="navbar-bg">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
