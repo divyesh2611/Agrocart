@@ -13,23 +13,25 @@ const Crop = require('../models/crop');
 // router.get("/",(req,res) => {
 //     res.send("addcrop")
 // })
-// router.get('/:id/', async (req, res) => {
-//     // id = "61f2b4e2ac3689e63399f9f8";
-//     let crop = await Crop.findOne({ _id: req.params.id.toString() });
-//     if (crop) {
-//         // console.log(question);
-//         res.json(crop);
-//     }
-//     else {
-//         res.json("error in fatching question")
-//     }
-// })
 
-// router.get("/",function(req,res){
-//     Crop.find().then((data)=>{
-//         res.json(data)
-//     })
-// })
+
+router.get("/",function(req,res){
+    Crop.find().then((data)=>{
+        res.json(data)
+    })
+})
+
+router.get('/:id', async (req, res) => {
+    
+    let crop = await Crop.find({ username: req.params.id.toString() });
+    if (crop) {
+        // console.log(question);
+        res.json(crop);
+    }
+    else {
+        res.json("error in fatching question")
+    }
+})
 // router.de("/:id/",function(req,res){
 //     Crop.findOne({_id: req.params.id}).then((data)=>{
 //         res.json(data)
@@ -43,7 +45,7 @@ router.post("/",(req,res) => {
         cropname:cropname,
          username:username, 
         city:city, 
-        logo:logo,
+         logo:logo,
         cropQuantity:cropQuantity,
          cropDescription:cropDescription, 
          cropprice:cropprice

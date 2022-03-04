@@ -5,6 +5,8 @@ var mongoose = require('mongoose');
 const { route } = require('./routes/register');
 const router = express.Router();
 //import res from "express/lib/response"
+// app.use(cors());
+// app.options("*", cors());
 
 const app = express()
 app.use(express.json())
