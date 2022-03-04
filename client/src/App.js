@@ -20,6 +20,7 @@ import Transaction from "./componets/Admin/Transaction";
 import BuyerInfo from "./componets/Admin/BuyerInfo";
 import BuyerDetails from "./componets/Farmer/BuyerDetails";
 import DisplayProducts from "./componets/Farmer/DisplayProducts";
+import UserState from './context/users/userState';
 
 
 
@@ -48,7 +49,7 @@ function App(){
           <Route exact path="/UploadProducts" element={<UploadProducts />}></Route>
           <Route exact path="/BuyerDetails" element={<BuyerDetails />}></Route>
           <Route exact path="/DisplayProducts" element={<DisplayProducts />}></Route>
-         
+          <Route exact path="/UserState" element={<UserState/>}></Route>
         </Routes>
       </BrowserRouter>
      

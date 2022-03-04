@@ -2,8 +2,7 @@ const mon = require("mongoose");
 
 function connectToDB() {
   mon
-    .connect(
-      "mongodb+srv://divyesh:divyesh@cluster0.apesh.mongodb.net/FarmerMarketing?retryWrites=true&w=majority",
+    .connect("mongodb+srv://divyesh:divyesh@cluster0.apesh.mongodb.net/FarmerMarketing?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

@@ -1,6 +1,15 @@
 import React from 'react'
+//import userContext from "../context/users/userContext"
+//import Useritem from './useritem';
+//mport {useContext} from 'react'
 
-export default function FarmerInfo ()  {
+export default function FarmerInfo (props)  {
+
+  
+    //const context = useContext(userContext);
+    //const { getUsers } = context;
+    
+        // eslint-disable-next-line 
   return (<>
 
              <section className='container Buyerdetail-container'>
@@ -20,8 +29,7 @@ export default function FarmerInfo ()  {
                </div>
                </section>
             </section>
+    
     </>
   )
 }
-
-

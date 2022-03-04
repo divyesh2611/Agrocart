@@ -8,10 +8,22 @@ const User = require('../models/User');
 // app.get("/",(req,res) => {
 //     res.send("My API login")
 // })
-
-router.get("/",(req,res) => {
-    res.send("register")
+router.get("/getusers", async(req, res) => {
+    // res.json("hello")
+    try {
+        const users = await User.find();
+        res.json(users);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Server Not Responded");
+    }
 })
+
+
+
+// router.get("/",(req,res) => {
+//     res.send("register")
+// })
 
 router.post("/",(req,res) => {
     //res.send("register")
@@ -55,6 +67,8 @@ router.post("/",(req,res) => {
     })
 
 })
+ 
+
 
 
 

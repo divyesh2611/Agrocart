@@ -138,7 +138,7 @@ export default function UploadProducts  ()  {
                 <label htmlfor="name">Crop Price (Rs/Kg) : </label>
                 <input type="text" name="cropprice" placeholder="cropprice" value={crop.cropprice} onChange={handleonchange} />
             </div>  
-            <button className="btn  btn-style8" type="submit" onClick={submit}>Submit</button>
+             <button className="btn  btn-style8" type="submit" onClick={submit}>Submit</button>
               </div>
           </section>
        
