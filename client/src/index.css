@@ -92,9 +92,10 @@ code {
     height: 2rem;
     border-radius: 2rem;
     color:var(--main-text-color);
-    background-color:rgb(120, 120, 236);
+    background-color:black;
     text-transform: capitalize;
     font-size: .9rem;
+    color: white;
 }
 .btn-style:first-child{
     margin-right: .5rem;
@@ -193,7 +194,7 @@ code {
     background-color: #FAF0E6;
     margin-top: -1rem;
     padding: 5rem;
-    margin-top: ;
+    /* margin-top: ; */
 
 }
 .programmes-hero-container h1{
@@ -260,7 +261,7 @@ code {
 .display-4 h2{
     height: 6vh;
     margin-top: 3rem;
-    margin-left: 45rem;
+    margin-left: 3rem;
     font-style:inherit;
     font-weight: bold;
     color: red;
@@ -440,7 +441,7 @@ input {
 }
 
 .btn2{
-    margin-top: .1rem;
+    margin-top: 3rem;
     margin-left: -.5rem;
     font-weight: bold;
     line-height: .5;
@@ -475,6 +476,13 @@ input {
     
     } 
 
+
+.for{
+    margin-top: -5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
 
 
 /*------------ADMIN-PAGE
@@ -527,7 +535,7 @@ input {
     /* width: 20%; */
     height: 30vh;
     /* margin-right: 1.5%; */
-    margin-left: 3rem;
+    margin-left: 7.5rem;
     border-radius: 2;
     /* box-shadow: 0 0.8rem 0.8rem rgb(73, 59, 59); */
     /* margin-bottom: 2rem; */
@@ -693,12 +701,12 @@ input {
 /*--------------TRANSPORT PAGE-----------------*/
 
 .trans-container{
-    background-image:url(../public/Images/BG4.jpg);
+    background-image:url(../public/Images/1.jpg);
     margin: 0;
     padding: 0;
     max-width: 100%;
     margin-top: px;
-    /* background-position: center; */
+   
     background-size: cover;
     margin-left: 19px;
 }
@@ -758,17 +766,19 @@ input {
     height: 3rem;
     border-radius: 2rem;
     color:var(--main-text-color);
-    background-color:rgb(138, 216, 177);
+    background-color:rgb(68, 79, 233);
     text-transform: capitalize;
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: 2rem;
     margin-left: -1rem;
     text-align: center;
+    font-weight: bold;
+    color: black;
 }
 
 .btn-style4:hover{
-    border: .1rem solid var(--primary-color);
-    background-color:rgb(231, 236, 185);
+    /* border: .1rem solid var(--primary-color); */
+    /* background-color:white; */
     color:var(--primary-color);
     box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
 }
@@ -777,6 +787,44 @@ input {
 
 
 /*---------------------Farmer-Pages-----------------*/
+
+
+.features-container h1{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1cm;
+}
+
+
+.card {
+    width: 24%;
+    height: 25%;
+    margin-top: 10px;
+    /* margin-left:320px; */
+
+}
+
+
+
+
+.card-body h4{
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-body h5{
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
 
 .farmer-container{
     background-color: rgb(192, 224, 236);
@@ -802,6 +850,7 @@ input {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     text-align: center;
+    color: #000;
     
 }
 

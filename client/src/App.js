@@ -26,6 +26,7 @@ import Wishlist from "./componets/Buyer/Wishlist";
 import Viewproductdetails from "./componets/Buyer/Viewproductdetails";
 import PlaceOrder from "./componets/Buyer/PlaceOrder";
 import PaymentMode from "./componets/Buyer/PaymentMode";
+import ForgotPassword from "./componets/Forms/ForgotPassword";
 
 
 
@@ -41,6 +42,7 @@ function App(){
           <Route exact path="/crops-information" element={<CropInformation />}></Route>
           <Route exact path="/Registration" element={<Registration />}></Route>
           <Route exact path="/Login" element={<Login />}></Route>
+          <Route exact path="/ForgotPassword" element={<ForgotPassword />}></Route>
           <Route exact path="/Admin" element={<Admin />}></Route>
           {/* <Route exact path="/AddCrop" element={<AddCrop />}></Route> */}
           <Route exact path="/FarmerInfo" element={<FarmerInfo />}></Route>
@@ -61,6 +63,7 @@ function App(){
           <Route exact path="/Viewproductdetails" element={<Viewproductdetails />}></Route>          
           <Route exact path="/PlaceOrder" element={<PlaceOrder />}></Route>  
           <Route exact path="/PaymentMode" element={<PaymentMode />}></Route>
+         
         </Routes>
       </BrowserRouter>
      

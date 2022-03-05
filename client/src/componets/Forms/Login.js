@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import axios from "axios" ;
  import { useHistory } from "react-router-dom";
  import {useNavigate} from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
 export default function Login() {
 
@@ -109,12 +110,16 @@ export default function Login() {
             Submit
           </button>
         </div>
-        <Link to='/ForgotPassword?' >Forgot Password?</Link>
+        <div className='for'>
+        <Link to='/ForgotPassword?'>Forgot Password?</Link>
+        </div>
         </div>
     
             </section>
          </>
   )
 }
+
+
 
 
