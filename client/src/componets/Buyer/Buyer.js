@@ -13,8 +13,8 @@ export default function Buyer  ()  {
              <img src='./Images/buyer2.jpg' alt='photosimg3' className='img2'/>
              <img src='./Images/buyer3.jpg' alt='photosimg3' className='img3'/>
              <h2>The Following Products are available for sale. Enjoy shopping</h2>
-             <Link className="btn btn-buyer" to='/WishList'>Wish List</Link>
-             <Link className="btn btn-buyer" to='/WishList'>Wish List</Link>
+             <Link className="btn btn-buyer" to='/WishList'>Cart</Link>
+            
           </header>
           </div>
          
