@@ -8,12 +8,12 @@ export default function DisplayProducts() {
     axios
       .get(
         "http://localhost:9002/uploadcrop/" +
-          JSON.parse(localStorage.getItem("user")).username
+        JSON.parse(localStorage.getItem("user")).username
       )
       .then((res) => {
-        console.log(res);
+        console.log(res);   
         setcrop(res.data);
-        console.log(crop)
+        console.log(crop);
       })
       .catch((err) => {
         console.log(err);
@@ -22,10 +22,8 @@ export default function DisplayProducts() {
 
   return (
     <>
-    
       <section className="container productdetail-container">
         <div className="farmer">
-
           <h1>Display Products</h1>
         </div>
         <section className="far-product">
@@ -77,40 +75,4 @@ export default function DisplayProducts() {
       </table>
     </>
   );
-}
-
-{
-  /* <table>
-<thead>
-  <tr>
-    <th scope="col">#</th>
-    <th scope="col"> Farmername</th>
-    <th scope="col">Date</th>
-    <th scope="col">City</th>
-    <th scope="col">Cropname</th>
-     <th scope="col">CropQuantity(kg)</th>
-      <th scope="col">CropDesc</th>
-       <th scope="col">CropImg</th>
-     <th scope="col">CropPrice(Rs/kg)</th>
-     <th scope="col">Modify</th>  
-  </tr>
-</thead>
-<tbody>
-  {crop.map((item, index) => (
-    <tr key={index}>
-      <td>{index + 1} </td>
-      <td>{item.Farmername}</td>
-      <td>{item.Date}</td>
-      <td>{item.City}</td>
-      <td>{item.Cropname}</td>
-      <td>{item.CropQuantity(kg)}</td>
-      <td>{item.CropDesc}</td>
-      <td>{item.CropImg}</td>
-      <td>{item.CropPrice(Rs/kg)}</td>
-      <td>{item.Modify}</td>
-
-    </tr>
-  ))}
-</tbody>
-</table> */
 }

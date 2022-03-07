@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 
@@ -6,8 +7,8 @@ export default function ChangeContactNumber ()  {
   const [user, setUser] = useState({
     currentnumber:"",
     newnumber:"",
-    cnewnumber:""
   })
+  const[cnewnumber,setcUser] = useState("")
   const handlechange = e => {
     const {name,value } = e.target 
     setUser({
@@ -15,11 +16,26 @@ export default function ChangeContactNumber ()  {
       [name]:value  
     })
   }  
+  const handleChange = e => {
+    const {name,value } = e.target 
+    setcUser({
+      ...cnewnumber,
+      [name]:value  
+    })
+  }  
     const submit = () => {
-      const{currentnumber,newnumber,cnewnumber} = user
+      const{currentnumber,newnumber} = user
   
-        console.log(JSON.stringify({currentnumber,newnumber,cnewnumber}))
-        alert("contactNumber is successfully change")
+        console.log(JSON.stringify({currentnumber,newnumber}))
+        if(newnumber==cnewnumber)
+        {
+            if(currentnumber && newnumber){
+              axios
+            }
+        }
+        else{
+          alert("passowrd is not meching")
+        }
     }    
   return (
 
@@ -37,7 +53,7 @@ export default function ChangeContactNumber ()  {
             </div>
             <div className="form-group1">
               <label htmlFor="password">Confirm Contact Number</label>
-              <input type="text" name="cnewnumber" placeholder="confirm number"value={user.cnewnumber} onChange={handlechange} />
+              <input type="text" name="cnewnumber" placeholder="confirm number"value={cnewnumber.cnewnumber} onChange={handleChange} />
             </div>
             <div className="btn6">
           <button type="button" className="btn" onClick={submit}>
