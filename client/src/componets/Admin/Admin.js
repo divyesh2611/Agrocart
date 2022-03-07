@@ -9,10 +9,10 @@ export default function Admin  () {
                      <h1>Farmer's Market</h1>
                     <h2>For Better and Clear Maeketing</h2>
                 <div className='admin-herosection-images'>
-                <img src='./Images/photo11.jpg' alt='photosimg1' className='img'/>
-                <img src='./Images/photo11.jpg' alt='photosimg2' className='img'/>
-                <img src='./Images/photo11.jpg' alt='photosimg3' className='img'/>
-                <img src='./Images/photo11.jpg' alt='photosimg4' className='img'/>
+                <img src='./Images/photo11.jpg' alt='photosimg1' className='img mx-4'/>
+                <img src='./Images/photo11.jpg' alt='photosimg2' className='img mx-4'/>
+                <img src='./Images/photo11.jpg' alt='photosimg3' className='img mx-4'/>
+                <img src='./Images/photo11.jpg' alt='photosimg4' className='img mx-4'/>
                 </div>
                 <div className='btn3'>
                 <form className="a-flex">

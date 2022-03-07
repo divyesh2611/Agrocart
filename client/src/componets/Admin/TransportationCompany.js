@@ -51,7 +51,7 @@ const submit = () => {
 
   return (
       <>
-            <section className='container upload-container'>
+            <section className='container trans-container'>
               <div className='display7'>
               
                 <div className='form3'>
