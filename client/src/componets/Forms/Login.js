@@ -57,6 +57,10 @@ export default function Login() {
                       
                   }
                })
+               .catch(error =>{
+                 console.log(error)
+
+               })
       }else{
           alert("Please Enter Username and Password!!");
       }

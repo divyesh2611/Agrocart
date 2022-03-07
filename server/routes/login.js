@@ -13,7 +13,7 @@ router.post("/",(req,res)=>{
     User.findOne({email:email,role:role},(err,user) => {
         // console.log(role)
         if(user){
-            if (bcrypt.compareSync(password,user.passowrd) && role==user.role){
+            if (bcrypt.compareSync(password,user.password) && role==user.role){
                 res.send({message:"Login Sucessfull",user:user})
                 //if(bcrypt.compareSync(password,user.passowrd))
             }else

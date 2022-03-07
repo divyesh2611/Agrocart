@@ -23,7 +23,7 @@ router.get("/getusers", async(req, res) => {
 
 
 
-// router.get("/",(req,res) => {
+//     router.get("/",(req,res) => {
 //     res.send("register")
 // })
 
@@ -75,21 +75,21 @@ router.get("/", (req, res) => {
 });
 
  
-// router.put("/:id", async (req, res) => {
-//   const register = await User.findByIdAndUpdate(req.params.id, {
-//     role: role,
-//     username: username,
-//     email: email,
-//     city: city,
-//     district: district,
-//     state: state,
-//     country: country,
-//     pincode: pincode,
-//     contactno: contactno,
-//     adharno: adharno,
-//     password: password,
-//   });
-// });
+router.put("/:id", async (req, res) => {
+  const register = await User.findByIdAndUpdate(req.params.id, {
+    role: role,
+    username: username,
+    email: email,
+    city: city,
+    district: district,
+    state: state,
+    country: country,
+    pincode: pincode,
+    contactno: contactno,
+    adharno: adharno,
+    password: password,
+  });
+});
 
 
 module.exports = router

@@ -27,6 +27,7 @@ router.get('/:id', async (req, res) => {
     if (crop) {
         // console.log(question);
         res.json(crop);
+        console.log(crop)
     }
     else {
         res.json("error in fatching crop")
