@@ -3,7 +3,8 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const User = require('../models/User');
-
+const bcrypt = require("bcryptjs");
+const jwt = require('jsonwebtoken')
 
 router.post("/",(req,res)=>{
     const { role,email , password } =req.body
@@ -12,8 +13,9 @@ router.post("/",(req,res)=>{
     User.findOne({email:email,role:role},(err,user) => {
         // console.log(role)
         if(user){
-            if (password == user.password && role==user.role){
+            if (bcrypt.compareSync(password,user.passowrd) && role==user.role){
                 res.send({message:"Login Sucessfull",user:user})
+                //if(bcrypt.compareSync(password,user.passowrd))
             }else
             {
                 res.send({message:"password didn't match "})

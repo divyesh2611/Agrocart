@@ -15,21 +15,21 @@ const Crop = require('../models/crop');
 // })
 
 
-router.get("/",function(req,res){
-    Crop.find().then((data)=>{
+router.get("/", function (req, res) {
+    Crop.find().then((data) => {
         res.json(data)
     })
 })
 
 router.get('/:id', async (req, res) => {
-    
+
     let crop = await Crop.find({ username: req.params.id.toString() });
     if (crop) {
         // console.log(question);
         res.json(crop);
     }
     else {
-        res.json("error in fatching question")
+        res.json("error in fatching crop")
     }
 })
 // router.de("/:id/",function(req,res){
@@ -37,30 +37,30 @@ router.get('/:id', async (req, res) => {
 //         res.json(data)
 //     })
 // })
-router.post("/",(req,res) => {
+router.post("/", (req, res) => {
     //res.send("register")
-    const {logo,cropname, username, city, cropQuantity, cropDescription, cropprice } =req.body
-    console.log(JSON.stringify({logo,cropname, username, city, cropQuantity, cropDescription, cropprice}))
+    const { logo, cropname, username, city, cropQuantity, cropDescription, cropprice } = req.body
+    console.log(JSON.stringify({ logo, cropname, username, city, cropQuantity, cropDescription, cropprice }))
     const crop = new Crop({
-        cropname:cropname,
-         username:username, 
-        city:city, 
-         logo:logo,
-        cropQuantity:cropQuantity,
-         cropDescription:cropDescription, 
-         cropprice:cropprice
+        cropname: cropname,
+        username: username,
+        city: city,
+        logo: logo,
+        cropQuantity: cropQuantity,
+        cropDescription: cropDescription,
+        cropprice: cropprice
     })
-    crop.save(async(err) => {
-        if(err){
+    crop.save(async (err) => {
+        if (err) {
             console.log(err)
-            res.send( err)
-        }else{
-            
-            res.send( {message : "Successfully"})
+            res.send(err)
+        } else {
+
+            res.send({ message: "Successfully" })
         }
     })
-    
-           
+
+
 })
 
 module.exports = router

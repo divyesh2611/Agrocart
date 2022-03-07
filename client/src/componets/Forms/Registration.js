@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import axios from 'axios'
 // import {useHistory} from "react-router-dom"
 import {useNavigate} from 'react-router-dom';
 import Select from 'react-select'
@@ -60,7 +59,7 @@ export default function Registration() {
            // alert("valid")
             axios.post("http://localhost:9002/register",user)
             .then ( res => {
-                {
+                
                     if (res.data.message)
                     {
 
@@ -77,7 +76,7 @@ export default function Registration() {
 
                     }
                     
-                }
+                
                 
             })
         }else{

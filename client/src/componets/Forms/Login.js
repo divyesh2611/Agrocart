@@ -1,31 +1,20 @@
 import React,{useState} from 'react';
 import axios from "axios" ;
- import { useHistory } from "react-router-dom";
  import {useNavigate} from 'react-router-dom';
+
 
 export default function Login() {
 
-   /* 
-   if(isadmin)
-   {
-
-   }
-   else{
-     if(isfarmar)
-   }
-   */
    
    
   const navigate = useNavigate();
-  // const classes = useStyles();
+  
 
   const [user , setUser] = useState({
       email : "",
       password : "",
       role:"farmer"
  })
-//  const [email , setEmail] = useState("")
- //const [alert, setAlert] = useState(null);
  const [message, setMessage] = useState("");
  function handlechange (e)
  {
@@ -65,6 +54,7 @@ export default function Login() {
                      // setMessage(res.data.message)
                       //setAlert(res.data.message)
                       navigate("/Login")
+                      
                   }
                })
       }else{
@@ -109,7 +99,7 @@ export default function Login() {
             Submit
           </button>
         </div>
-        <Link to='/ForgotPassword?' >Forgot Password?</Link>
+        {/* <Link to='/ForgotPassword?' >Forgot Password?</Link> */}
         </div>
     
             </section>
