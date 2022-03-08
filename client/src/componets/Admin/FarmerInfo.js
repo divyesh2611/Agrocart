@@ -1,20 +1,39 @@
 import React from 'react'
-//import userContext from "../context/users/userContext"
-//import Useritem from './useritem';
-//mport {useContext} from 'react'
+import UserComponent from './UserComponent'
+import { useState } from "react";
+
 
 export default function FarmerInfo (props)  {
 
+   const host = "http://localhost:9002"
+  const [users, setUsers] = useState([])
   
-    //const context = useContext(userContext);
-    //const { getUsers } = context;
-    
-        // eslint-disable-next-line 
+
+  // Get all Cards
+  const getUsers = async () => {
+    // API Call 
+    const response = await fetch(`${host}/register/getusers`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+        
+      }
+    });
+    const json = await response.json() 
+    setUsers(json)
+   
+    console.log(json)
+    }
+    getUsers();
+
+  
+   
   return (<>
 
              <section className='container Buyerdetail-container'>
                <div className='buyerd'>
                <h1>Farmer Informations</h1>
+               {/* <button className="btn btn-primary" onClick={()=>{getUsers()}}></button> */}
                </div> 
                <section className='buy'>
                <div className='buy1'>
@@ -27,6 +46,15 @@ export default function FarmerInfo (props)  {
                  <h2>Contact No.</h2>
                  <h2>Aadhar No.</h2>
                </div>
+               
+               <div>
+                    {users.map(user =>{
+                        return <UserComponent key={user.id} user={user}/>
+                    })
+                  }
+                </div>
+            
+
                </section>
             </section>
     
