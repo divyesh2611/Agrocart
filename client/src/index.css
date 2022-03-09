@@ -1543,7 +1543,6 @@ h2{
     height: 100vh;
     background-color: whitesmoke;
     text-align: center;
-   
     
 
 }
@@ -1563,3 +1562,19 @@ h2{
 
 }
 
+
+
+
+
+
+/*-------------------------------Transportations page ------------------------------------------*/
+
+
+.wrapper{
+    background-color: #181220;
+    margin: 20px auto;
+    max-width: 400px;
+    height: 60vh;
+    padding: 15px 20px;
+    border-radius: 10px
+}
