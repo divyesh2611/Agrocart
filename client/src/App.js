@@ -27,6 +27,7 @@ import Viewproductdetails from "./componets/Buyer/Viewproductdetails";
 import PlaceOrder from "./componets/Buyer/PlaceOrder";
 import PaymentMode from "./componets/Buyer/PaymentMode";
 import ForgotPassword from "./componets/Forms/ForgotPassword";
+import Transpotations from "./componets/Buyer/Transpotations";
 
 
 
@@ -63,7 +64,7 @@ function App(){
           <Route exact path="/Viewproductdetails" element={<Viewproductdetails />}></Route>          
           <Route exact path="/PlaceOrder" element={<PlaceOrder />}></Route>  
           <Route exact path="/PaymentMode" element={<PaymentMode />}></Route>
-         
+          <Route exact path="/Transpotations" element={<Transpotations />}></Route>
         </Routes>
       </BrowserRouter>
      

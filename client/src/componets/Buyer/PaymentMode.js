@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styles from './mystyles.modules.css';
 
 
@@ -43,8 +44,8 @@ export default function PaymentMode ()  {
             </div>
         </div>
        
-        <div class="my-3 mx-auto"> <input type="submit" value="place your order" class="text-uppercase btn btn-primary btn-block p-3" /> </div>
-       
+        {/* <div class="my-3 mx-auto"> <input type="submit" value="place your order" class="text-uppercase btn btn-primary btn-block p-3" /> </div> */}
+        <div class="my-3 mx-auto"> <Link class='text-uppercase btn btn-primary btn-block p-3' to='/Transportations'>Place Your Order</Link> </div>
     </form>
 </div>
 
