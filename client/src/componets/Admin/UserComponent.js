@@ -1,12 +1,12 @@
 import React from 'react'
 
 const UserComponent = (props) => {
-    const{_id,__v,username,role,pincode,password,email,district,country,contactno,city,adharno}= props.user
+    const{username,role,pincode,email,district,country,contactno,city,adharno}= props.user
   return (
       <>
     
     <div>
-    <table class="table">
+    <table class="table table-striped">
  
   <tbody>
     <tr>

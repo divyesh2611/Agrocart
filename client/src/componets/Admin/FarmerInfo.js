@@ -32,7 +32,7 @@ export default function FarmerInfo (props)  {
 
              <section className='container Buyerdetail-container'>
                <div className='buyerd'>
-               <h1>Farmer Informations</h1>
+               <h1>User Informations</h1>
                {/* <button className="btn btn-primary" onClick={()=>{getUsers()}}></button> */}
                </div> 
                <section className='buy'>
