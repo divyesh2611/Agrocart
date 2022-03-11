@@ -26,53 +26,40 @@ export default function DisplayProducts() {
         <div className="farmer">
           <h1>Display Products</h1>
         </div>
-        <section className="far-product">
-          <div className="far">
-            <h2>Farmername</h2>
-            <h2>Date</h2>
-            <h2>City</h2>
-            <h2>Cropname</h2>
-            <h2>CropQuantity(kg)</h2>
-            <h2>CropDesc</h2>
-            <h2>CropImg</h2>
-            <h2>CropPrice(Rs/kg)</h2>
-            <h2>Modify</h2>
-          </div>
-        </section>
-      </section>
-      <br></br>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col"> Farmername</th>
-            <th scope="col">Date</th>
-            <th scope="col">City</th>
-            <th scope="col">Cropname</th>
-            <th scope="col">CropQuantity(kg)</th>
-            <th scope="col">CropDesc</th>
-            <th scope="col">CropImg</th>
-            <th scope="col">CropPrice(Rs/kg)</th>
-            <th scope="col">Modify</th>
+        <table>
+        <thead className="far-product">
+          <tr className= "far">
+            <th>No</th>
+            <th>Farmername</th>
+            {/* <h2>Date</h2> */}
+            <th>City</th>
+            <th>Cropname</th>
+            <th>CropQuantity(kg)</th>
+            <th>CropDesc</th>
+            {/* <h2>CropImg</h2> */}
+            <th>CropPrice(Rs/kg)</th>
+            {/* <h2>Modify</h2> */}
           </tr>
         </thead>
-        <tbody>
+        <tbody className="far-product">
           {crop.map((item, index) => (
-            <tr key={index}>
+            <tr className="far" key={index}>
               <td>{index + 1} </td>
               <td>{item.username}</td>
-              {/* <td>{item.Date}</td> */}
+              {/* <h2>12 March</h2> */}
               <td>{item.city}</td>
               <td>{item.cropname}</td>
               <td>{item.cropQuantity}</td>
               <td>{item.cropDescription}</td>
-              {/* <td>{item.cropImg}</td> */}
-              <td>{item.cropPrice}</td>
+              {/* <td>{item.logo}</td> */}
+              <td>{item.cropprice}</td>
               {/* <td>{item.Modify}</td> */}
             </tr>
           ))}
         </tbody>
-      </table>
-    </>
+        </table>
+      </section>
+      <br></br>
+      </>
   );
 }

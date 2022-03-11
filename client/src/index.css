@@ -1190,7 +1190,7 @@ input {
 .far-product{
     height: 10vh;
     background-color: rgb(52, 53, 49);
-    text-align: center;
+    /* text-align: center; */
     margin-top: 10px;
     border-radius: 10px;
     width: 100%;
@@ -1200,20 +1200,18 @@ input {
 }
 
 
-.far h2{
+.far td, th{
     font-size: .5cm;
     /* max-width: 12.5%; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    display: inline;
+    /* display: inline; */
     padding: 0 30px;
     color: white; 
     /* text-align: center; */
     
     
 }
-
-
 
 
 /*-------------------------------BUYER PAGE ---------------------------------*/
@@ -1616,9 +1614,9 @@ body {
     box-shadow: 0px 5px 10px #212121
 }
 
-.card {
+/* .card {
     width: fit-content
-}
+} */
 
 .card-body {
     width: fit-content
