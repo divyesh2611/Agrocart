@@ -20,14 +20,16 @@ export default function Buyer() {
             </Link>
           </header>
         </div>
-        <div class="container-fluid">
-          <div class="card mx-auto col-md-3 col-10 mt-5">
+        
+        <div className="row d-flex justify-content-center">
+    
+          <div class="card mt-5 mx-4">
             {" "}
             <img
               class="mx-auto img-thumbnail"
               src="https://media.istockphoto.com/photos/wheat-picture-id479629438?b=1&k=20&m=479629438&s=170667a&w=0&h=W1WdyCrAR9n7s-JuagFWFTeLIUUfIdT6m6jc-a_Ri9w="
-              width="auto"
-              height="auto"
+              width="250px"
+              height="140px"
               
             />
             <div class="card-body text-center mx-auto">
@@ -40,15 +42,15 @@ export default function Buyer() {
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-fluid">
-          <div class="card mx-auto col-md-3 col-10 mt-5">
+        
+      
+          <div class="card  mt-5 mx-4">
             {" "}
             <img
               class="mx-auto img-thumbnail"
               src="https://media.istockphoto.com/photos/the-sugar-cane-picture-id965303384?k=20&m=965303384&s=612x612&w=0&h=Ck-TqGZJ1tuXjH-R2SS3N1jDAQVFJMk9RPAQh7jBeEc="
-              width="auto"
-              height="auto"
+              width="250x"
+              height="140px"
             />
             <div class="card-body text-center mx-auto">
               <div class="cvp">
@@ -60,15 +62,14 @@ export default function Buyer() {
               </div>
             </div>
           </div>
-        </div>
-        <div class="container-fluid">
-          <div class="card mx-auto col-md-3 col-10 mt-5">
+       
+          <div class="card  mt-5 mx-4">
             {" "}
             <img
               class="mx-auto img-thumbnail"
               src="https://images.unsplash.com/photo-1502395809857-fd80069897d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JnYW5pYyUyMGNvdHRvbnxlbnwwfHwwfHw%3D&w=1000&q=80"
-              width="auto"
-              height="auto"
+              width="250px"
+              height="140px"
             />
             <div class="card-body text-center mx-auto">
               <div class="cvp">
@@ -81,6 +82,7 @@ export default function Buyer() {
             </div>
           </div>
         </div>
+        
       </section>
     </>
   );
