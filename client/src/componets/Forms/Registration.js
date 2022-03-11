@@ -138,7 +138,7 @@ export default function Registration() {
               <input type="text" name="adharno" value={user.adharno} onChange={handlechange} placeholder="adhar no" required/>
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password" >Password</label>
               <input type="password" name="password" value={user.password} onChange={handlechange} placeholder="password" required/>
             </div>
             <div className="btn1">

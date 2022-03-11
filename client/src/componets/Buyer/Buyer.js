@@ -8,10 +8,10 @@ export default function Buyer() {
       <section className="container buyer-container">
         <div className="buyer-display">
           <header>
-            {/* <h1>Welcome To The Web Page For Buyer</h1> */}
-            {/* <img src="./Images/buyer1.jpg" alt="photosimg3" className="img1" /> */}
-            {/* <img src="./Images/buyer2.jpg" alt="photosimg3" className="img2" /> */}
-            {/* <img src="./Images/buyer3.jpg" alt="photosimg3" className="img3" /> */}
+            <h1>Welcome To The Web Page For Buyer</h1>
+            <img src="./Images/buyer1.jpg" alt="photosimg3" className="img1" />
+            <img src="./Images/buyer2.jpg" alt="photosimg3" className="img2" />
+            <img src="./Images/buyer3.jpg" alt="photosimg3" className="img3" />
             <h2>
               The Following Products are available for sale. Enjoy shopping
             </h2>
@@ -28,6 +28,7 @@ export default function Buyer() {
               src="https://media.istockphoto.com/photos/wheat-picture-id479629438?b=1&k=20&m=479629438&s=170667a&w=0&h=W1WdyCrAR9n7s-JuagFWFTeLIUUfIdT6m6jc-a_Ri9w="
               width="auto"
               height="auto"
+              
             />
             <div class="card-body text-center mx-auto">
               <div class="cvp">
