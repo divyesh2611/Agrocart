@@ -88,7 +88,7 @@ export default function UploadProducts  ()  {
               <input type="text" name="cropDescription" placeholder="cropDescription" value={crop.cropDescription} onChange={handleonchange} />
             </div>
             <div className="form-group7">
-              <label htmlFor="name">Crop Image : </label>
+              <label htmlFor="name">Crop Image : </label> 
               
                   
                  
