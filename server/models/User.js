@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
     adharno:Number,
     password:String
 
-});
+},{timestamps:true});
 
 const User = new mongoose.model("User",UserSchema)
 

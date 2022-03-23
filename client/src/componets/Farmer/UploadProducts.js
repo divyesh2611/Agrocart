@@ -4,15 +4,14 @@ import FileBase from 'react-file-base64' ;
 import { Link } from 'react-router-dom';
 export default function UploadProducts  ()  {
  
-  const [crop, setUser] = useState({
+  const [crop, setCrop] = useState({
     username:"",
     city:"",
     cropQuantity:"", 
     cropDescription:"",
     cropprice:"",
     cropname:"",
-    cropprice:"",
-    logo:"" 
+    image:"" 
     
   })
   
@@ -20,19 +19,44 @@ export default function UploadProducts  ()  {
   
   const handleonchange = e => {
     const {name,value } = e.target 
-    setUser({
+    console.log("name:",name)
+    console.log("value:",value)
+    setCrop({
       ...crop,
       [name]:value  
     })
   } 
-  const submit = () => {
-    const{logo, cropname, username, city, cropQuantity, cropDescription, cropprice} = crop
 
-      console.log(JSON.stringify({logo, cropname, username, city, cropQuantity, cropDescription, cropprice}))
-      if(cropname && username && city && cropQuantity && cropDescription && cropprice )
+  // const imagehandle = (e)=>{
+  //   console.log(e.target.files[0])
+  //   setCrop({...crop,image:e.target.files[0]
+  //   })
+  // }
+
+    const submit = () => {
+    
+      
+
+
+    const{image, cropname, username, city, cropQuantity, cropDescription, cropprice} = crop
+    const formdata = new FormData();
+    formdata.append('image', crop.image, crop.image.name);
+    formdata.append('username', crop.username);
+    formdata.append('cropQuantity', crop.cropQuantity);
+    formdata.append('cropprice', crop.cropprice);
+    formdata.append('cropDescription', crop.cropDescription);
+    formdata.append('cropname', crop.cropname);
+    formdata.append('city', crop.city);
+
+      console.log(JSON.stringify({image, cropname, username, city, cropQuantity, cropDescription, cropprice}))
+      if( username && city && cropQuantity && cropDescription && cropprice )
         {
             // alert("valid")
-            axios.post("http://localhost:9002/uploadcrop",crop)
+            axios.post("http://localhost:9002/uploadcrop",formdata,{headers: {
+              'Content-Type': `multipart/form-data; boundary=${formdata._boundary}`,
+          },
+}
+           )
             .then ( res => {
                 {
                     if (res.data.message)
@@ -43,8 +67,11 @@ export default function UploadProducts  ()  {
                     
                 }
                 
+            }).catch((error) =>{
+              console.log("adsfa")
             })
         }else{
+
             alert("Fill up complete form")
 
         }
@@ -90,35 +117,28 @@ export default function UploadProducts  ()  {
             <div className="form-group7">
               <label htmlFor="name">Crop Image : </label> 
               
-                  
+              {/* <input type="file" name="image" placeholder="image"value={crop.image} onChange={imagehandle} /> */}
                  
 
-                  <FileBase
+                  <input
                     type="file"
-                    multiple={false}
-                    onDone={({ base64 }) =>
-                      setUser({ ...crop, logo: base64 })
+                    // multiple={false}
+                    onChange={( base64 ) =>
+                      setCrop({ ...crop, image: base64.target.files[0] })
+                      // console.log(base64)
                     }
                     style={{ display: "" }}
                   />
                 
               </div>  
-              {/* <div className='form-group8'> 
-              <img
-                      src={crop.logo}
-                      style={{
-                        width: "100px",
-                        height: "100px",
-                        borderRadius: "5px",
-                      }}
-                    /> 
-                </div>    */}
+            
             <div className='form-group8'>
                 <label htmlfor="name">Crop Price (Rs/Kg) : </label>
                 <input type="text" name="cropprice" placeholder="cropprice" value={crop.cropprice} onChange={handleonchange} />
             </div>  
+
              {/* <Link className="btn  btn-style8" type="submit" onClick={submit}>Submit</Link> */}
-             <Link  to='/Farmer'className="btn  btn-style8" type="submit" onClick={submit}>Submit</Link>
+             <Link  to='/UploadProducts'className="btn  btn-style8" type="submit" onClick={submit}>Submit</Link>
               </div>
           </section>
        

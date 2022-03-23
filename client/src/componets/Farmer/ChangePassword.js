@@ -4,6 +4,9 @@ export default function ChangePassword ()  {
   const submit = () =>{
     alert("password is successfully change")
   }
+
+
+  
   return(
         <>
            <section className='container pass-container'>

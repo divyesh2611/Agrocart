@@ -1,8 +1,11 @@
 const mon = require("mongoose");
+const dotenv = require("dotenv");
+
 
 function connectToDB() {
+  dotenv.config()
   mon
-    .connect("mongodb+srv://divyesh:divyesh@cluster0.apesh.mongodb.net/FarmerMarketing?retryWrites=true&w=majority",
+    .connect(process.env.MONGO_URL,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

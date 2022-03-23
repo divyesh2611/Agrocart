@@ -8,10 +8,8 @@ const CropSchema = new mongoose.Schema({
    cropQuantity:Number,
     cropDescription:String, 
     cropprice:Number,
-    logo:String
+    image:String
 
 });
 
-const Crop = new mongoose.model("uploadcrop",CropSchema)
-
-module.exports = Crop;
+module.exports = mongoose.model("uploadcrop",CropSchema)

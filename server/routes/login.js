@@ -13,9 +13,21 @@ router.post("/",(req,res)=>{
     User.findOne({email:email,role:role},(err,user) => {
         // console.log(role)
         if(user){
-            if (bcrypt.compareSync(password,user.password) && role==user.role){
-                res.send({message:"Login Sucessfull",user:user})
+            if ((password,user.password) && role==user.role){
+                
+                   //jwt
+                const accessToken = jwt.sign({
+                    id:user._id
+                },process.env.JWT_SEC,
+                {expiresIn:"3d"});
+                //res.send(accessToken)
+
+                const {password, ...other} =user._doc
+
+                res.send({message:"Login Sucessfull",user:other,accessToken})
                 //if(bcrypt.compareSync(password,user.passowrd))
+             
+                
             }else
             {
                 res.send({message:"password didn't match "})

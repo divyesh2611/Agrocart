@@ -1,6 +1,16 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import {  getProduct } from "../actions/productAction";
+import { useSelector, useDispatch } from "react-redux";
+
 
 export default function HomePage() {
+    const dispatch = useDispatch();
+    
+    useEffect(() => {
+       
+        dispatch(getProduct());
+      }, [dispatch]);
+
     return (<>
         <header>
         <section className='container main-hero-container'>
