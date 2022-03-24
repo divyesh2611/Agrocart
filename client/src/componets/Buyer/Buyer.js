@@ -22,10 +22,23 @@ export default function Buyer() {
       });
   }, []);
 
-  const cart = () => {
-      
+  
+  // const [cart, setCart] = useState({
+  
+    
+  // })
+  const addcart = () => {
+    // const formdata = new FormData();
+    // formdata.append('image', crop.image, crop.image.name);
+    // formdata.append('username', crop.username);
+    // formdata.append('cropQuantity', crop.cropQuantity);
+    // formdata.append('cropprice', crop.cropprice);
+    // formdata.append('cropDescription', crop.cropDescription);
+    // formdata.append('cropname', crop.cropname);
+    // formdata.append('city', crop.city);
+    // console.log(crop)
   }
-
+console.log(crop)
 
   return (
     <>
@@ -39,7 +52,7 @@ export default function Buyer() {
             <h2>
               The Following Products are available for sale. Enjoy shopping
             </h2>
-            <Link className="btn btn-buyer" to="/WishList">
+            <Link className="btn btn-buyer" to="/WishList" >
               Cart
             </Link>
           </header>
@@ -94,7 +107,7 @@ export default function Buyer() {
                 <h5 class="card-title font-weight-bold"> {item.cropname}</h5>
                 <p class="card-text">city: {item.city}</p> 
                 <p class="card-text">price:{item.cropprice}</p> <br />{""}
-                <a href="#" class="btn cart px-auto">
+                <a href="#" class="btn cart px-auto" onClick={addcart}>
                   ADD TO CART
                 </a>
               </div>

@@ -4,12 +4,12 @@ import { useSelector, useDispatch } from "react-redux";
 
 
 export default function HomePage() {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     
-    useEffect(() => {
+    // useEffect(() => {
        
-        dispatch(getProduct());
-      }, [dispatch]);
+    //     dispatch(getProduct());
+    //   }, [dispatch]);
 
     return (<>
         <header>

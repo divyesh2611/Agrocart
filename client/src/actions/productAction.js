@@ -20,14 +20,13 @@ export const getProduct = async (dispatch) => {
       axios
       .get(
         "http://localhost:9002/uploadcrop/" 
-        
       )
       .then((res) => {
         console.log(res);   
         crop = res.data
         console.log(crop);
       })
-      .catch((err) => {
+      .catch((err) => {  
         console.log(err);
       });
       dispatch({

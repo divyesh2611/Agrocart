@@ -94,10 +94,18 @@ router.put("/", (req, res) => {
     const { email, password } = req.body
     // console.log(role)
     // const navigate = useNavigate();
+    console.log(JSON.stringify({ email,  password }))
 
-    User.updateOne({ email:email },{ $set: { password: password } })
-        .then((res) => { res.send({massege:"password is updated"}) })
-        .catch((error) => { console.log(error) })
-    console.log(req.body);
+    User.updateOne({ email:email },{ $set: { password: password } },(err, user) => {
+        if (user) {
+            res.send({message: "password is change" })
+
+        }
+        else  {
+            res.send(err)
+        }
+
+     
+    })
 })
 module.exports = router
