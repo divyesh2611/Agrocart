@@ -30,11 +30,11 @@ const handleSubmit = () => {
 	if(user.email && user.password )
 	{
 		// alert("valid")
-		axios.put("http://localhost:9002/register",user)
+		axios.post("http://localhost:9002/register/post",user)
 		.then ( res => {
 			alert(res.data.message)
 			//navigate("/Login");
-			console.log(user)
+			console.log("hii")
 		})
 		.catch(error =>{
 			console.log(error)

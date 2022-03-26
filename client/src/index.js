@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {Provider} from 'react-redux'
+import {CartProvider} from 'react-use-cart'
 
   
 
 ReactDOM.render(
-  //  <Provider store={store}>
+  //  <CartProvider >
   //  <App />
-  //  </Provider>,
+  //  </CartProvider>,
    <React.StrictMode>
      <App />
    </React.StrictMode>,

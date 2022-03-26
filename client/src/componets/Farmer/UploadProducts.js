@@ -96,6 +96,7 @@ export default function UploadProducts  ()  {
              <option value="peanuts">Peanuts(મગફળી)</option>
              <option value="chickpeas">Chickpeas(ચણા)</option>
              <option value="sorghum">Sorghum(જુવાર)</option>
+             <option value="cotton">cotton</option>
              </select>
             </div>
             <div className="form-group9">

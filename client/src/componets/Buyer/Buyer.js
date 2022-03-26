@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Itemcard from "./Itemcard";
 
 
 export default function Buyer() {
@@ -13,14 +14,17 @@ export default function Buyer() {
         
       )
       .then((res) => {
-        console.log(res);   
+        //console.log(res);   
         setcrop(res.data);
-        console.log(crop);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+
+  
 
   
   // const [cart, setCart] = useState({
@@ -28,15 +32,8 @@ export default function Buyer() {
     
   // })
   const addcart = () => {
-    // const formdata = new FormData();
-    // formdata.append('image', crop.image, crop.image.name);
-    // formdata.append('username', crop.username);
-    // formdata.append('cropQuantity', crop.cropQuantity);
-    // formdata.append('cropprice', crop.cropprice);
-    // formdata.append('cropDescription', crop.cropDescription);
-    // formdata.append('cropname', crop.cropname);
-    // formdata.append('city', crop.city);
-    // console.log(crop)
+  
+    
   }
 console.log(crop)
 
@@ -57,6 +54,7 @@ console.log(crop)
             </Link>
           </header>
         </div>
+         
         {/* <table>
         <thead className="far-product">
           <tr className= "far">
@@ -90,7 +88,7 @@ console.log(crop)
           ))}
         </tbody> */}
         {/* </table> */}
-        {crop.map((item, index) => ( 
+        {/* {crop.map((item, index) => ( 
         <div className="row d-flex justify-content-center">
     
           <div class="card mt-5 mx-4">
@@ -115,46 +113,17 @@ console.log(crop)
           </div>
         
       
-          {/* <div class="card  mt-5 mx-4">
-            {" "}
-            <img
-              class="mx-auto img-thumbnail"
-              src="https://media.istockphoto.com/photos/the-sugar-cane-picture-id965303384?k=20&m=965303384&s=612x612&w=0&h=Ck-TqGZJ1tuXjH-R2SS3N1jDAQVFJMk9RPAQh7jBeEc="
-              width="250x"
-              height="140px"
-            />
-            <div class="card-body text-center mx-auto">
-              <div class="cvp">
-                <h5 class="card-title font-weight-bold"> Sugarcane</h5>
-                <p class="card-text">₹ 50</p> <br />{" "}
-                <a href="#" class="btn cart px-auto">
-                  ADD TO CART
-                </a>
-              </div>
-            </div>
-          </div>
-       
-          <div class="card  mt-5 mx-4">
-            {" "}
-            <img
-              class="mx-auto img-thumbnail"
-              src="https://images.unsplash.com/photo-1502395809857-fd80069897d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JnYW5pYyUyMGNvdHRvbnxlbnwwfHwwfHw%3D&w=1000&q=80"
-              width="250px"
-              height="140px"
-            />
-            <div class="card-body text-center mx-auto">
-              <div class="cvp">
-                <h5 class="card-title font-weight-bold"> Cotton</h5>
-                <p class="card-text">₹ 43.2</p> <br />{" "}
-                <a href="#" class="btn cart px-auto">
-                  ADD TO CART
-                </a>
-              </div>
-            </div>
-           </div> */}
+          
         </div> 
-        ))}  
+        ))}   */}
       </section>
+      <section className="py-4 container">
+           <div className="row justify-content-center">
+           {crop.map((item,index) => ( 
+            <Itemcard image={`http://localhost:9002/public/images/${item.image}` } cropname = {item.cropname} cropprice ={item.cropprice} item={item} key={index} id={item.id}/>
+            ))} 
+           </div>
+         </section>
     </>
   );
 }

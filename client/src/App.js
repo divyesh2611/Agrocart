@@ -28,7 +28,8 @@ import PlaceOrder from "./componets/Buyer/PlaceOrder";
 import PaymentMode from "./componets/Buyer/PaymentMode";
 import ForgotPassword from "./componets/Forms/ForgotPassword";
 import Transpotations from "./componets/Buyer/Transpotations";
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {CartProvider} from 'react-use-cart'
 
 
 function App(){
@@ -36,7 +37,9 @@ function App(){
     <>
       <BrowserRouter>
         <Navbar />
+        <CartProvider>
         <Routes>
+          
           <Route exact path="/" element={<HomePage />}></Route>
           <Route exact path="/About" element={<AboutFarmer />}></Route>
           <Route exact path="/programmes-schemes" element={<ProgrammesandSchemes />}></Route>
@@ -58,14 +61,18 @@ function App(){
           <Route exact path="/BuyerDetails" element={<BuyerDetails />}></Route>
           <Route exact path="/DisplayProducts" element={<DisplayProducts />}></Route>
           <Route exact path="/UserState" element={<UserState/>}></Route>
-          <Route exact path="/Buyer" element={<Buyer />}></Route>
-          {/* <Route exact path="/Viewproductdetails" element={<Viewproductsdetails />}></Route> */}
-          <Route exact path="/Wishlist" element={<Wishlist />}></Route>    
+          
+            <Route exact path="/Buyer" element={<Buyer />}></Route>
+            {/* <Route exact path="/Viewproductdetails" element={<Viewproductsdetails />}></Route> */}
+            <Route exact path="/Wishlist" element={<Wishlist />}></Route>    
+          
           <Route exact path="/Viewproductdetails" element={<Viewproductdetails />}></Route>          
           <Route exact path="/PlaceOrder" element={<PlaceOrder />}></Route>  
           <Route exact path="/PaymentMode" element={<PaymentMode />}></Route>
           <Route exact path="/Transpotations" element={<Transpotations />}></Route>
+          
         </Routes>
+        </CartProvider>
       </BrowserRouter>
      
     </>

@@ -81,7 +81,7 @@ router.post("/",upload.single('image'), (req, res) => {
         image: image,
         cropQuantity: cropQuantity,
         cropDescription: cropDescription,
-        cropprice: cropprice
+        cropprice: cropprice,
     })
     crop.save(async (err) => {
         if (err) {

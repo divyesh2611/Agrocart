@@ -90,7 +90,7 @@ router.get("/", (req, res) => {
 //   });
 // });
 
-router.put("/", (req, res) => {
+router.post("/post", (req, res) => {
     const { email, password } = req.body
     // console.log(role)
     // const navigate = useNavigate();
