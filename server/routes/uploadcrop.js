@@ -69,9 +69,9 @@ router.get('/:id', async (req, res) => {
 router.post("/",upload.single('image'), (req, res) => {
     //res.send("register")
 
-    const {cropname, username, city, cropQuantity, cropDescription, cropprice } = req.body
+    const {cropname, username, city, cropQuantity, cropDescription, price } = req.body
     const image = req.file ? req.file.filename : null;
-    console.log(JSON.stringify({image,cropname, username, city, cropQuantity, cropDescription, cropprice }))
+    console.log(JSON.stringify({image,cropname, username, city, cropQuantity, cropDescription, price }))
     
 
     const crop = new Crop({
@@ -81,7 +81,7 @@ router.post("/",upload.single('image'), (req, res) => {
         image: image,
         cropQuantity: cropQuantity,
         cropDescription: cropDescription,
-        cropprice: cropprice,
+        price: price,
     })
     crop.save(async (err) => {
         if (err) {

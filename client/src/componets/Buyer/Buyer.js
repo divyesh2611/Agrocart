@@ -80,7 +80,7 @@ console.log(crop)
 
               {console.log(item.image)}
 
-              <td>{item.cropprice}</td>
+              <td>{item.price}</td>
               <a href="#" class="btn cart px-auto" onClick={cart}>
                   ADD TO CART
                 </a>
@@ -104,7 +104,7 @@ console.log(crop)
               <div class="cvp">
                 <h5 class="card-title font-weight-bold"> {item.cropname}</h5>
                 <p class="card-text">city: {item.city}</p> 
-                <p class="card-text">price:{item.cropprice}</p> <br />{""}
+                <p class="card-text">price:{item.price}</p> <br />{""}
                 <a href="#" class="btn cart px-auto" onClick={addcart}>
                   ADD TO CART
                 </a>
@@ -120,7 +120,7 @@ console.log(crop)
       <section className="py-4 container">
            <div className="row justify-content-center">
            {crop.map((item,index) => ( 
-            <Itemcard image={`http://localhost:9002/public/images/${item.image}` } cropname = {item.cropname} cropprice ={item.cropprice} item={item} key={index} id={item.id}/>
+            <Itemcard image={`http://localhost:9002/public/images/${item.image}` } cropname = {item.cropname} price ={item.price} item={item} key={index} id={item.id}/>
             ))} 
            </div>
          </section>

@@ -9,7 +9,7 @@ export default function UploadProducts  ()  {
     city:"",
     cropQuantity:"", 
     cropDescription:"",
-    cropprice:"",
+    price:"",
     cropname:"",
     image:"" 
     
@@ -38,18 +38,18 @@ export default function UploadProducts  ()  {
       
 
 
-    const{image, cropname, username, city, cropQuantity, cropDescription, cropprice} = crop
+    const{image, cropname, username, city, cropQuantity, cropDescription, price} = crop
     const formdata = new FormData();
     formdata.append('image', crop.image, crop.image.name);
     formdata.append('username', crop.username);
     formdata.append('cropQuantity', crop.cropQuantity);
-    formdata.append('cropprice', crop.cropprice);
+    formdata.append('price', crop.price);
     formdata.append('cropDescription', crop.cropDescription);
     formdata.append('cropname', crop.cropname);
     formdata.append('city', crop.city);
 
-      console.log(JSON.stringify({image, cropname, username, city, cropQuantity, cropDescription, cropprice}))
-      if( username && city && cropQuantity && cropDescription && cropprice )
+      console.log(JSON.stringify({image, cropname, username, city, cropQuantity, cropDescription, price}))
+      if( username && city && cropQuantity && cropDescription && price )
         {
             // alert("valid")
             axios.post("http://localhost:9002/uploadcrop",formdata,{headers: {
@@ -135,7 +135,7 @@ export default function UploadProducts  ()  {
             
             <div className='form-group8'>
                 <label htmlfor="name">Crop Price (Rs/Kg) : </label>
-                <input type="text" name="cropprice" placeholder="cropprice" value={crop.cropprice} onChange={handleonchange} />
+                <input type="text" name="price" placeholder="price" value={crop.price} onChange={handleonchange} />
             </div>  
 
              {/* <Link className="btn  btn-style8" type="submit" onClick={submit}>Submit</Link> */}

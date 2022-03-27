@@ -7,15 +7,15 @@ const CropSchema = new mongoose.Schema({
    city:String, 
    cropQuantity:Number,
     cropDescription:String, 
-    cropprice:Number,
+    price:Number,
     image:String,
 });
 
-// CropSchema.virtual('id').get(function () {
-//     return this._id.toHexString();
-// });
-// CropSchema.set('toJSON', {
-//     virtuals: true,
-// });
+CropSchema.virtual('id').get(function () {
+    return this._id.toHexString();
+});
+CropSchema.set('toJSON', {
+    virtuals: true,
+});
 
 module.exports = mongoose.model("uploadcrop",CropSchema)

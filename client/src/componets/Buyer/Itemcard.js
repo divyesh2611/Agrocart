@@ -19,7 +19,7 @@ const Itemcard =(props) => {
             <div className="card-body">
               <div className="cvp">
                 <h5 className="card-text"> {props.cropname}</h5>  
-                <h5 className="card-text">${props.cropprice}</h5>
+                <h5 className="card-text">${props.price}</h5>
                 <button  className="btn btn-success" onClick={()=>addItem(props.item)} >
                   ADD TO CART
                 </button>
