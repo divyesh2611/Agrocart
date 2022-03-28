@@ -8,7 +8,7 @@ const Itemcard =(props) => {
     return (
      
       <div className='col-11 col-md-6 col-lg-4 mx-0 mb-4'>
-        <div className="card p-0 overflow-hidden h-100 shadow">
+        <div className="card p-0 shadow">
             <img
               className="card-img-top img-fluid"
               src={props.image}

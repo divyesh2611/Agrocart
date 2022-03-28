@@ -42,6 +42,7 @@ export default function Login() {
                   {
                       //setMessage(res.data.message)
                      // setAlert(res.data.message)
+                     localStorage.setItem('isUser',true)
                      localStorage.setItem('user',JSON.stringify(res.data.user))
                        if(role=='farmer')
                         navigate('/Farmer')

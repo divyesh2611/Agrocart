@@ -5,10 +5,7 @@ const UserComponent = (props) => {
   return (
       <>
     
-    <div>
-    <table class="table table-striped">
- 
-  <tbody>
+    
     <tr>
       <td>{role}</td>
       <td>{username}</td>
@@ -19,13 +16,8 @@ const UserComponent = (props) => {
       <td>{pincode}</td>
       <td>{contactno}</td>
       <td>{adharno}</td>
-      
-    </tr>
+      </tr>
     
-  </tbody>
-</table>
-
-    </div>
 </>
   )
 }

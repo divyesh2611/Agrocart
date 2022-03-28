@@ -117,7 +117,7 @@ console.log(crop)
         </div> 
         ))}   */}
       </section>
-      <section className="py-4 container">
+      <section className="hello1 py-4 container">
            <div className="row justify-content-center">
            {crop.map((item,index) => ( 
             <Itemcard image={`http://localhost:9002/public/images/${item.image}` } cropname = {item.cropname} price ={item.price} item={item} key={index} id={item.id}/>

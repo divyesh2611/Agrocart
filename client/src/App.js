@@ -25,11 +25,12 @@ import Buyer from "./componets/Buyer/Buyer";
 import Wishlist from "./componets/Buyer/Wishlist";
 import Viewproductdetails from "./componets/Buyer/Viewproductdetails";
 import PlaceOrder from "./componets/Buyer/PlaceOrder";
-import PaymentMode from "./componets/Buyer/PaymentMode";
+// import PaymentMode from "./componets/Buyer/PaymentMode";
 import ForgotPassword from "./componets/Forms/ForgotPassword";
 import Transpotations from "./componets/Buyer/Transpotations";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import {CartProvider} from 'react-use-cart'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import {CartProvider} from 'react-use-cart';
+import { Logout } from "./componets/Forms/Logout";
 
 
 function App(){
@@ -68,8 +69,10 @@ function App(){
           
           <Route exact path="/Viewproductdetails" element={<Viewproductdetails />}></Route>          
           <Route exact path="/PlaceOrder" element={<PlaceOrder />}></Route>  
-          <Route exact path="/PaymentMode" element={<PaymentMode />}></Route>
+          {/* <Route exact path="/PaymentMode" element={<PaymentMode />}></Route> */}
           <Route exact path="/Transpotations" element={<Transpotations />}></Route>
+          <Route exact path="/Logout" element={<Logout />}></Route>
+          
           
         </Routes>
         </CartProvider>

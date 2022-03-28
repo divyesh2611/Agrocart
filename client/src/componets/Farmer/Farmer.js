@@ -31,22 +31,22 @@ export default function Farmer  ()  {
                 <h1>Standout Features</h1>
             </div>
             <div className='row justify-content-md-center'>
-            <div class="card" >
+            <div class="card1" >
                           <p class="aligncenter">
                                <img class="img6" src="../Images/handshake.png" alt="Card image cap" width="250px" height="200px"/>
                           </p>
-                          <div class="card-body">
+                          <div class="card1-body">
                                <h4 class="card-title font-weight-bold">Buyer Connection</h4>
                                <br/>
                                <h5 class="card-text">Get in direct touch with the buyer to satisfy its need </h5>
                           </div>
                      </div>
 
-                     <div class="card mx-4">
+                     <div class="card1 mx-4">
                           <p class="aligncenter">
                                <img class="card-img-top image" src="../Images/farmer.png" alt="Card image cap" width="250px" height="200px"/>
                           </p>
-                          <div class="card-body">
+                          <div class="card1-body">
                                <h4 class="card-title font-weight-bold">Farmer Group Formation</h4>
                                <br/>
                                <h5 class="card-text">Get in touch with other farmers making your own community where you can ask for help</h5>
