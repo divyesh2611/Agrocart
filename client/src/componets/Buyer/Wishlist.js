@@ -58,7 +58,7 @@ export default function Wishlist  ()  {
                 </div>
               </section> 
                
-               <Link className="btn btn-buy" to='/PlaceOrder' onClick={()=>{}}>Place Order</Link>
+               <Link className="btn btn-buy" to='/PlaceOrder' >Place Order</Link>
             </section>
   
          </>

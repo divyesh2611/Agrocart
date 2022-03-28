@@ -1,16 +1,29 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 
 
 
 export default function PlaceOrder ()  {
     
-    const placeorder = () => {
+ 
+    const [user, setUser] = useState({
+        address:"",
+    })
+    const handlechange = e => {
+        const {name,value } = e.target 
+        setUser({
+          ...user,
+          [name]:value  
+        })
+      } 
+      const placeorder = () => {
 
+        if(user.address){
+            alert("Your Order Is Conform")
+        }
+        else
+           alert("fill up the values")
     } 
-
-
-
   return (<>
             
             <section className= 'container order-container'>
@@ -36,7 +49,7 @@ export default function PlaceOrder ()  {
                    
                 </div>
                 <div className='form-order1'>
-                <input type="text" classname="address" placeholder="address" />
+                <input type="text" name='address' classname="address" placeholder="address"value={user.address} onChange={handlechange}/>
                 </div>
                  
                 <input className='checkbox' type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
