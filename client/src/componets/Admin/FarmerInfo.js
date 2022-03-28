@@ -35,7 +35,7 @@ export default function FarmerInfo (props)  {
                <h1>User Informations</h1>
                {/* <button className="btn btn-primary" onClick={()=>{getUsers()}}></button> */}
                </div> 
-               <section className='buy'>
+               {/* <section className='buy'>
                <div className='buy1'>
                  <h2>Username</h2>
                  <h2>E-mail</h2>
@@ -45,18 +45,36 @@ export default function FarmerInfo (props)  {
                  <h2>Pin code</h2>
                  <h2>Contact No.</h2>
                  <h2>Aadhar No.</h2>
-               </div>
+               </div> */}
+               <table class="table table-striped">
+ 
+                 <tbody>
+                 <tr>
+                      <th>role</th>
+                      <th>username</th>
+                      <th>email</th>
+                      <th>city</th>
+                      <th>district</th>
+                      <th>country</th>
+                      <th>pincode</th>
+                      <th>contactno</th>
+                      <th>adharno</th>
+                      
+                            </tr>
+                            
+                         
                
-               <div>
                     {users.map(user =>{
                         return <UserComponent key={user.id} user={user}/>
                     })
                   }
-                </div>
-            
+                
+                  
+                </tbody>
+                </table>
 
                </section>
-            </section>
+            {/* </section> */}
     
     </>
   )

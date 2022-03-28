@@ -31,14 +31,20 @@ export const Navbar = () => {
                   <Link className="nav-link" to='/crops-information'>Crops Information</Link>
                 </li>
               </ul>
-
+              {localStorage.getItem("isUser") == 'true'? 
+              <form className="d-flex">
+                
+                <Link className="btn btn-style" to='/Logout'>Logout</Link>
+               
+              </form>
+               :  
               <form className="d-flex">
                 {/* <button className="btn  btn-style" type="submit">Registration</button> */}
                 <Link className="btn btn-style" to='/Registration'>Registration</Link>
                 {/* <button className="btn  btn-style" type="submit">Log in</button> */}
                 <Link className="btn btn-style" to='/Login'>Log In</Link>
               </form>
-
+              }
             </div>
           </div>
         </nav>
