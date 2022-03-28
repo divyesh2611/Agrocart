@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-export default function PlaceOrder ()  {
+export default function PlaceOrder (props)  {
   return (<>
             
             <section className= 'container order-container'>
