@@ -102,7 +102,7 @@ const handleSubmit = () => {
 				/>
             </div>
             
-            <div className="btn6">
+            <div className="green_btn">
           <button type="button" className={styles.green_btn} onClick={handleSubmit}>
             Submit
           </button>

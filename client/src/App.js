@@ -28,7 +28,7 @@ import PlaceOrder from "./componets/Buyer/PlaceOrder";
 import PaymentMode from "./componets/Buyer/PaymentMode";
 import ForgotPassword from "./componets/Forms/ForgotPassword";
 import Transpotations from "./componets/Buyer/Transpotations";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {CartProvider} from 'react-use-cart'
 
 

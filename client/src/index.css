@@ -92,7 +92,7 @@ code {
     height: 2rem;
     border-radius: 2rem;
     color:var(--main-text-color);
-    background-color:black;
+    background-color: #000;
     text-transform: capitalize;
     font-size: .9rem;
     color: white;
@@ -312,6 +312,8 @@ code {
     /* background-position: center; */
     background-size: cover;
     margin-left: 19px;
+    height: 120vh;
+
 }
 
 
