@@ -1,11 +1,13 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
 
 
 export default function PlaceOrder ()  {
     
- 
+  const navigate = useNavigate();
+
     const [user, setUser] = useState({
         address:"",
     })
@@ -23,6 +25,7 @@ export default function PlaceOrder ()  {
         }
         else
            alert("fill up the values")
+        navigate('/Buyer')
     } 
   return (<>
             

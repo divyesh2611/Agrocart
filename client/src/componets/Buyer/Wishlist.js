@@ -13,6 +13,7 @@ export default function Wishlist  ()  {
          removeItem,
          emptyCart
         } = useCart()
+        if (isEmpty) return<h1 className='text-center'>your cart is empty</h1>
   console.log(items)
 
     return (<>
@@ -30,7 +31,7 @@ export default function Wishlist  ()  {
                              return(
                              <tr key={index}>
                                 <td>
-                                  <img src={item.image} style={{height: '6rem'}}/>
+                                  <img src={item.image} style={{height: '6rem'}} alt='image'/>
                                 </td>
                                 <td>{item.cropname}</td>
                                 <td>{item.price}</td>
